@@ -290,7 +290,8 @@ nav {
 4: DIV'ER
 --------------------------------*/
 
-#materiale_wrapper .beskrivelsesbox {
+#materiale_wrapper .beskrivelsesbox,
+#skema_wrapper .beskrivelsesbox {
     background-color: #DEDCDB;
     position: fixed;
     width: 100vw;
