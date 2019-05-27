@@ -26,6 +26,8 @@ body {
 
 html {
     scroll-behavior: smooth;
+    width: 100vw;
+    height: auto;
 }
 
 * {
@@ -35,7 +37,7 @@ html {
 .section_wrapper {
     max-width: 902px;
     margin: 0 auto;
-    height: 100vh;
+    height: auto;
 }
 
 .hide {
@@ -373,6 +375,7 @@ nav {
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-around;
+    margin: 0 auto;
 
 
 }
