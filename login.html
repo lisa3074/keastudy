@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Index for KEA | Study - læringsportal // Web prototype af et redesignet Fronter">
+    <meta name="keywords" content="Fronter,Kea,mmd,mulitmediedesigner,web prototype,prototype,mobile first">
+    <meta name="author" content="Lisa Søndergaard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | KEA</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body class="login" id="login_body">
+    <header id="login_header">
+        <img id="kea" src="billeder/kea_logo_hvid.png" alt="logo">
+    </header>
+
+
+    <div class="wrapper">
+        <h1 class="usynlig">kea study - login</h1>
+        <form>
+            <label for="email">
+                <input type="email" id="email" name="email" placeholder="email" required>
+                <br>
+            </label>
+            <label for="pass">
+                <input type="password" id="pass" name="password" placeholder="password" maxlength="30" required>
+                <br><br>
+            </label>
+            <div class="flex">
+                <input type="checkbox" name="checkbox">
+                <p class="checkbox">Husk bruger</p>
+            </div>
+            <a href="glemtpassword.html">
+                <p class="right">Glemt password?</p>
+            </a>
+        </form>
+    </div>
+    <div class="wrapper">
+
+        <div id="ani_knap">
+            <p>CONTINUE</p>
+        </div>
+        <a href="http://www.facebook.com" target="_blank">
+            <div id="facebook_login">
+                <img src="billeder/Ikoner/facebook.png" alt="facebook">
+                <p>LOGIN WITH FACEBOOK</p>
+            </div>
+        </a>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
