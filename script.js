@@ -114,6 +114,11 @@ function indexF() {
     })
 }
 
+
+//-------------------------------------------------
+//                    SKEMA
+//-------------------------------------------------
+
 function iDagSkema() {
     console.log("iDagSkema");
     document.querySelector("#menuknap").addEventListener("click", toggleMenu);
@@ -139,6 +144,7 @@ function mandagSkema() {
     d1.classList = "fadein_left";
     d3.classList = "hide";
     d2.classList = "fadeout_right";
+    setTimeout(hideTirsdagOnsdagS, 500);
     pil1th.addEventListener("click", tirsdagSkema);
 }
 
@@ -146,6 +152,7 @@ function tirsdagSkema() {
     d1.classList = "fadeout_left";
     d3.classList = "hide";
     d2.classList = "fadein_right";
+    setTimeout(hideMandagOnsdagS, 500);
     pil2tv.addEventListener("click", mandagSkema);
     pil2th.addEventListener("click", onsdagSkema);
 }
@@ -154,6 +161,7 @@ function tirsdagSkema2() {
     d1.classList = "hide";
     d3.classList = "fadeout_right";
     d2.classList = "fadein_left";
+    setTimeout(hideMandagOnsdagS, 500);
     pil2tv.addEventListener("click", mandagSkema);
     pil2th.addEventListener("click", onsdagSkema);
 }
@@ -162,9 +170,28 @@ function onsdagSkema() {
     d1.classList = "hide";
     d3.classList = "fadein_right";
     d2.classList = "fadeout_left";
+    setTimeout(hideMandagTirsdagS, 500);
     pil3tv.addEventListener("click", tirsdagSkema2);
 }
 
+function hideMandagOnsdagS() {
+    d1.classList = "hide";
+    d3.classList = "hide";
+}
+
+function hideMandagTirsdagS() {
+    d1.classList = "hide";
+    d2.classList = "hide";
+}
+
+function hideTirsdagOnsdagS() {
+    d2.classList = "hide";
+    d3.classList = "hide";
+}
+
+//-------------------------------------------------
+//                 MATERIALER
+//-------------------------------------------------
 
 function iDagMateriale() {
     console.log("iDagMateriale");
@@ -191,6 +218,7 @@ function mandagMaterialer() {
     d21.classList = "fadein_left";
     d23.classList = "hide";
     d22.classList = "fadeout_right";
+    setTimeout(hideTirsdagOnsdagM, 500);
     pil21th.addEventListener("click", tirsdagMaterialer);
 }
 
@@ -198,6 +226,7 @@ function tirsdagMaterialer() {
     d21.classList = "fadeout_left";
     d23.classList = "hide";
     d22.classList = "fadein_right";
+    setTimeout(hideMandagOnsdagM, 500);
     pil22tv.addEventListener("click", mandagMaterialer);
     pil22th.addEventListener("click", onsdagMaterialer);
 }
@@ -206,6 +235,7 @@ function tirsdagMaterialer2() {
     d21.classList = "hide";
     d23.classList = "fadeout_right";
     d22.classList = "fadein_left";
+    setTimeout(hideMandagOnsdagM, 500);
     pil22tv.addEventListener("click", mandagMaterialer);
     pil22th.addEventListener("click", onsdagMaterialer);
 }
@@ -214,5 +244,21 @@ function onsdagMaterialer() {
     d21.classList = "hide";
     d23.classList = "fadein_right";
     d22.classList = "fadeout_left";
+    setTimeout(hideMandagTirsdagM, 500);
     pil23tv.addEventListener("click", tirsdagMaterialer2);
+}
+
+function hideMandagOnsdagM() {
+    d21.classList = "hide";
+    d23.classList = "hide";
+}
+
+function hideMandagTirsdagM() {
+    d21.classList = "hide";
+    d22.classList = "hide";
+}
+
+function hideTirsdagOnsdagM() {
+    d22.classList = "hide";
+    d23.classList = "hide";
 }

@@ -22,12 +22,15 @@ body {
     padding: 0;
     background-color: #ffffff;
     width: 100%;
+    max-height: 1366px;
+    overflow: scroll;
 }
 
 html {
     scroll-behavior: smooth;
     width: 100vw;
-    height: auto;
+    max-height: 1366px;
+    overflow: scroll;
 }
 
 * {
@@ -96,6 +99,10 @@ nav {
     height: 3.5rem;
     width: 100vw;
     max-width: 900px;
+    position: fixed;
+    width: 100vw;
+    margin: 0 auto;
+    z-index: 100;
 }
 
 #menuknap {
@@ -231,7 +238,7 @@ nav {
     padding: 1rem 0 1rem 0;
     z-index: 160;
     background-color: #EA5045;
-    width: 100%;
+    width: 100vw;
     height: 4.5rem;
     display: flex;
     flex-wrap: nowrap;
@@ -329,7 +336,6 @@ nav {
     background-color: #3F3140;
     width: 100%;
     margin: 0 auto;
-    top: 12.3rem;
     z-index: 100;
     max-width: 900px;
 }
@@ -826,7 +832,7 @@ input[type="password"] {
 footer {
     background-color: #3F3140;
     position: fixed;
-    bottom: 0;
+    bottom: 0vh;
     width: 100vw;
     height: 4rem;
     display: flex;
@@ -1104,7 +1110,7 @@ footer {
 
 .fadeout_right {
     animation-name: fadeout_right_kf;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
     animation-fill-mode: both;
@@ -1118,7 +1124,7 @@ footer {
     }
 
     100% {
-        transform: translate(200vw, 0vw);
+        transform: translate(50vw, 0vw);
         left: 200vw;
         opacity: 0;
     }
@@ -1126,7 +1132,7 @@ footer {
 
 .fadein_right {
     animation-name: fadein_right_kf;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
     animation-fill-mode: both;
@@ -1134,7 +1140,7 @@ footer {
 
 @keyframes fadein_right_kf {
     0% {
-        transform: translate(200vw, 0vw);
+        transform: translate(50vw, 0vw);
         z-index: 90;
         opacity: 0;
     }
@@ -1148,7 +1154,7 @@ footer {
 
 .fadeout_left {
     animation-name: fadeout_left_kf;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
     animation-fill-mode: both;
@@ -1162,7 +1168,7 @@ footer {
     }
 
     100% {
-        transform: translate(-100vw, 0vw);
+        transform: translate(-50vw, 0vw);
         z-index: 90;
         opacity: 0;
     }
@@ -1170,7 +1176,7 @@ footer {
 
 .fadein_left {
     animation-name: fadein_left_kf;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
     animation-fill-mode: both;
@@ -1178,7 +1184,7 @@ footer {
 
 @keyframes fadein_left_kf {
     0% {
-        transform: translate(-100vw, 0vw);
+        transform: translate(-50vw, 0vw);
         opacity: 0;
         z-index: 90;
     }
